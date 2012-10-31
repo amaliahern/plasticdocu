@@ -1,0 +1,36 @@
+<h2>Configure the ignored files list</h2>
+<p>
+	Take a look at the “items view” in your recently created workspace. Click on the “items view” on the “main actions” action bar:
+ </p>
+</p>
+<p align="center"><img id="lesson1_001" 
+	src="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/img/lesson1/itemsviewbutton.png" border="0" height="99" width="369"></p>
+
+<p align="center">Figure 1: Items View</p>
+
+<p>And the “items view” will show up. Take a look at it and you’ll see how, right now, all files and directories are marked as “private” which means they’re not yet under Plastic SCM control.
+</p>
+<p>Also take a look at the “.svn” folders. These are folders containing information coming from Subversion, the version control originally used by Dokan. We’re not interested on these folders so we’re going to add them to the “ignored list”.</p>
+<p align="center"><img id="lesson1_001" 
+	src="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/img/lesson1/itemsviewallprivate.png" border="0" height="99" width="369"></p>
+
+<p align="center">Figure 2: Ignored list</p>
+
+<p>In order to do that, right click on a “.svn” folder and click on “add to ignored list” as the figure below shows:</p>
+<p align="center"><img id="lesson1_001" 
+	src="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/img/lesson1/addtoignoredlist.png" border="0" height="99" width="369"></p>
+
+<p align="center">Figure 3: Add .svn ignored list</p>
+
+<p>
+	It means that all of the “.svn” directories and their contents will be “ignored”: Plastic won’t try to add them, not try to find changes inside them.
+
+</p>
+<p>
+	Repeat for the “.bin” and “.obj” subdirectories and “.suo” files and you’ll get something like this:
+</p>
+<p align="center"><img id="lesson1_001" 
+	src="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/img/lesson1/itemsviewaddedtoignoredconf.png" border="0" height="99" width="369"></p>
+
+<p align="center">Figure 4: All ignored files</p>
+<p>Now we’re ready to add the code into the version control, because we ensured that we’ll only add the code we’re interested on.</p>
