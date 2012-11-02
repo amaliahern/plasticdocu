@@ -157,9 +157,62 @@ textarea {
           box-sizing: border-box;
 }
 
+@font-face {font-family:FontinSans; src:url("http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/FontinSans.otf");}
+@font-face {font-family:Cantarell; src:url("http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Cantarell-Regular.ttf");}
+@font-face {
+    font-family:'Nobile'; 
+    src:url('./bootstrap/fonts/nobile.ttf');
+}
+
+@font-face {
+    font-family: 'Museo500Regular';
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo500-Regular-webfont.eot');
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo500-Regular-webfont.woff') format('woff'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo500-Regular-webfont.ttf') format('truetype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo500-Regular-webfont.svg#Museo500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Museo300Regular';
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo300-Regular-webfont.eot');
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo300-Regular-webfont.woff') format('woff'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'SpringsteelSerifExtremeRg';
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/SpringsteelSerif-Thin-webfont.eot');
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/SpringsteelSerif-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/SpringsteelSerif-Thin-webfont.woff') format('woff'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/SpringsteelSerif-Thin-webfont.ttf') format('truetype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/SpringsteelSerif-Thin-webfont.svg#SpringsteelSerifExtremeRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ImparaLight';
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/ImparaLig-webfont.eot');
+    src: url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/ImparaLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/ImparaLig-webfont.woff') format('woff'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/ImparaLig-webfont.ttf') format('truetype'),
+         url('http://192.168.1.51/~amalia/Sites/pscm/bootstrap/fonts/ImparaLig-webfont.svg#ImparaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "ImparaLight","Nobile","SpringsteelSerifExtremeRg","Cantarell","FontinSans";
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -626,19 +679,38 @@ cite {
   color: #468847;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 
+{
   margin: 10px 0;
-  font-family: inherit;
+  font-family: "Museo500Regular";
   font-weight: bold;
   line-height: 1;
   color: inherit;
   text-rendering: optimizelegibility;
 }
+
+h2
+ {
+  margin: 10px 0;
+  font-family: "Museo300Regular";
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: "inherit";
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
 
 h1 small,
 h2 small,
@@ -940,7 +1012,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {

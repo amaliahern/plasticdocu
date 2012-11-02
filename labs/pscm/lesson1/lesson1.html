@@ -9,16 +9,17 @@
     <!—[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]—>
-    <link href="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
       body { padding-top: 60px; }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
   </head>
   <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://192.168.1.54/~amalia/Sites/pscm/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -47,8 +48,11 @@
 	  </ul>
     </div>
     <div id="mainContainer" class="span10">
-      <h1>Lesson 1</h1>
-      
+      <h2>Plastic SCM Labs</h2>
+        <p>Welcome to Plastic SCM labs... </p>
+        <p>Each lab explains ....</p>
+        <p> This lessons uses a tutorial format that incrementally works on a project that teaches you some fundamental concepts about distributed version control system. So it's important you follow each step.
+        <p>This is the first lesson....</p>
     </div>
   </div>
 </div>
@@ -56,7 +60,7 @@
 
         function loadDocumentation(sectionpage) {
 
-        $('#mainContainer').load('http://192.168.1.54/~amalia/Sites/pscm'+sectionpage);
+        $('#mainContainer').load('http://192.168.1.51/~amalia/Sites/pscm'+sectionpage);
 
         };    
 
