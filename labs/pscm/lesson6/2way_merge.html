@@ -1,0 +1,28 @@
+<h2>3-way merge vs 2-way merge</h2>
+<p>
+	What’s 3-way and 2-way merge?  So far, what you’ve seen is a 3-way merge in action in the previous part:
+</p>
+<p>
+You’ve the original file, and you’ve modified this file in the same place in two different branches. The result file is the one created after the changes are combined, and you decided what is the final code.</p>
+
+<p>2-way merge is easier to explain. It doesn’t consider the base file also known as common ancestor, to calculate the merge.
+</p>
+<p>Let’s go back to the “dokan-net-0.6.0\DokanNet\DokanOperations.cs”, make a couple of very simple changes, and try to merge with a 2-way merge tool. Check the results on the below figure:</p>
+
+<p align="center"><img id="lesson6_048" 
+	src="../bootstrap/img/lesson6/makinglabel_001.png"  width="50%"></p>
+
+<p align="center">Figure 1: 2-way Merge</p>
+
+<p>
+ENlace al post
+</p>
+
+<p>At each difference the 2-way merge tool won’t be able to decide whether it is modified or removed code. A 3-way merge tool would automatically solve the same two conflicts. Of course, Plastic SCM only uses 3-way merge tool.</p>
+
+<p>
+	Great! You have reached the end of lesson 6.
+</p>
+
+
+

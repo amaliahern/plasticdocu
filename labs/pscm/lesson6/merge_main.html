@@ -1,0 +1,86 @@
+<h2>Merge back to “main”</h2>
+<p>
+	Let’s go to “Branch Explorer” view to see the current status of the repository. Something like the following will show up:
+</p>
+
+<p align="center"><img id="lesson6_016" 
+	src="../bootstrap/img/lesson6/makinglabel_001.png"  width="50%"></p>
+
+<p align="center">Figure 1: Branch Explorer</p>
+
+<p>
+ Let’s now make a merge from SCM002 branch to main branch. Right click on SCM002 branch and select “Merge from this branch” option:
+</p>
+
+<p align="center"><img id="lesson6_017" 
+	src="../bootstrap/img/lesson6/createlabel_002.png" width="40%"></p>
+
+<p align="center">Figure 2: Merge from this branch</p>
+
+<p>Once the button is clicked you will see how merging from SCM002 branch to main branch in “Merge from branch” view.</p>
+
+<p align="center"><img id="lesson6_018" 
+	src="../bootstrap/img/lesson6/baseline_003.png"  width="40%"></p>
+
+<p align="center">Figure 3: Merge Branch View</p>
+
+<p>
+	As you can see, there are two columns marked:
+</p>
+<ul>
+	<li>Remarks: short description of the conflict for each item. In this case, changes in both source and destination contributors.</li>
+	<li>Contributor: prints the actions that will be run when the “Process all merges” button is clicked.</li>
+</ul>
+
+<p>
+	Let’s go to know more about the merge. So, click “Explain Merge” button at the top in tool bar, “The Merge Explanation” view will look like the following:
+</p>
+
+<p align="center"><img id="lesson6_019" 
+	src="../bootstrap/img/lesson6/baseline2_004.png"  width="40%"></p>
+
+<p align="center">Figure 4: Merge Explanation</p>
+
+<p>On the figure you can learn how merge works. There are 3 important terms:</p>
+<ul>
+   <li>Source (src): it shows the revision you are merging from, SCM002 in this case.</li>
+   <li>Base: the initial revision, it’s Baseline002.</li>
+   <li>Destination (dst): what you have right now on your workspace. A new changeset will be created on main branch. It will contain the merge result.</li>
+</ul>
+
+<p>Let’s return to “Merge form branch” view. Then click on the  “Process all merges” button to start the process. Once the merging completes, the “Branch explorer” view will look like the following:</p>
+
+<p align="center"><img id="lesson6_020" 
+	src="../bootstrap/img/lesson6/baseline2_004.png"  width="40%"></p>
+
+<p align="center">Figure 5: Branch Explorer</p>
+
+
+<p>There is a new changeset pending to checkin. Let’s go to “Pending changes” view and check what we have modified so far: 
+</p>
+
+<p align="center"><img id="lesson6_021" 
+	src="../bootstrap/img/lesson6/baseline2_004.png"  width="40%"></p>
+
+<p align="center">Figure 6: Pending Changes</p>
+
+
+<p>As you can see “the Pending Changes” view lists the file you previously merged. If you clicked on the “Show Diffs” button you will see the lines you’ve modified:</p>
+
+<p align="center"><img id="lesson6_022" 
+	src="../bootstrap/img/lesson6/baseline2_004.png"  width="40%"></p>
+
+<p align="center">Figure 7: Pending Changes links</p>
+
+<p>
+  You can inspect the difference prior to checkin the merge operation. The code has been correctly merged.
+</p>
+
+
+
+
+
+
+
+
+

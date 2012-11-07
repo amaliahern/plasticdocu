@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+   <head>
+    <meta charset="utf-8">
+    <title>Learning Plastic SCM</title>
+
+    <meta name="description" content="Lesson Plastic SCM">
+    <meta name="author" content="Amalia">
+    <!—[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]—>
+    
+    <style>
+      body { padding-top: 60px; }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+ <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="http://192.168.1.51/~amalia/Sites/pscm/pscmdoc.html">Plastic SCM</a>
+      <ul class="nav">
+        <li><a href="http://192.168.1.51/~amalia/Sites/pscm/lesson1/lesson1.html">lessons</a></li>
+        <li><a href="http://192.168.1.51/~amalia/Sites/pscm/download/download.html">download</a></li>
+        <li><a href="#about">about</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+ <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <ul class="nav nav-list">
+  		<li class="nav-header">Table of Contents</li>
+  		<li><a href="javascript:loadDocumentation('/lesson2/select_file_modify.html')">Select a file to modify</a></li>
+      <li><a href="javascript:loadDocumentation('/lesson2/checkout_edit.html')">Checkout to edit</a></li>
+      <li><a href="javascript:loadDocumentation('/lesson2/file_modify.html')">Modify the file</a></li>
+      <li><a href="javascript:loadDocumentation('/lesson2/check_pending_changes.html')">Check the difference in pending changes</a></li>
+      <li><a href="javascript:loadDocumentation('/lesson2/making_checking.html')">Making Checking</a></li>
+      <li><a href="javascript:loadDocumentation('/lesson2/show_diff.html')">Show the Diff</a></li>
+      
+	  </ul>
+    </div>
+    <div id="mainContainer" class="span10">
+      <h2>Plastic SCM Labs</h2>
+        <p>Welcome to Plastic SCM labs. Here you will find a collection of labs to help you understand Plastic SCM, using GUI tool. </p>
+        <p>Each lab explains the steps required to solve a specific problem.</p>
+        <p> This lessons uses a tutorial format that incrementally works on a project that teaches you some fundamental concepts about distributed version control system. So it's important you follow each step.
+        <p>This is the first lesson....</p>
+    </div>
+  </div>
+</div>
+ <script type="text/javascript">
+
+        function loadDocumentation(sectionpage) {
+
+        $('#mainContainer').load('http://192.168.1.51/~amalia/Sites/pscm'+sectionpage);
+
+        };    
+
+    </script>
+  </body>
+</html>

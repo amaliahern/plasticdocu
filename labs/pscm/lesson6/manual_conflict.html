@@ -1,0 +1,237 @@
+<h2>3-way merge: Manual conflicts</h2>
+<p>
+	Let’s now to modify exactly the same code on the same file.
+</p>
+<p>	We’re going to create two new branches. </p>
+<p>Let’s go to the ”Branch Explorer” view, right click on the current changeset and select “Create a branch from this changeset” option. Enter “SCM003” as branch name and enter a comment like the below figure:</p>
+
+<p align="center"><img id="lesson6_026" 
+	src="../bootstrap/img/lesson6/makinglabel_001.png"  width="50%"></p>
+
+<p align="center">Figure 1: New branch</p>
+
+<p>
+ We’re going to modify “dokan-net-0.6.0\DokanNet\Properties\DokanNet.cs” adding new lines at line 117:
+</p>
+
+<p align="center"><img id="lesson6_027" 
+	src="../bootstrap/img/lesson6/createlabel_002.png" width="40%"></p>
+
+<p align="center">Figure 2: Modifying a file</p>
+
+<p>Let’s go to “Pending changes” view and check what we have modified so far:</p>
+
+<p align="center"><img id="lesson6_028" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 3: Pending Changes</p>
+
+<p>
+	Don’t forget to write a comment, for example: “Adding new conditions on DokanNet.cs file” and make checkin.
+</p>
+<p>  
+	Let’s go to “Branch Explorer” view to see the current status of the repository. Something like the following will show up:
+</p>
+
+<p align="center"><img id="lesson6_029" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 4: Branch Explorer</p>
+
+<p>
+	Let’s go to return main branch. Right click on Baseline003 and click “Switch workspace to this changeset” action as the figure below shows:
+</p>
+<p align="center"><img id="lesson6_030" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 5: Switch workspace to this changeset</p>
+
+<p>
+	After clicking a dialog will show up to confirm the changing:
+</p>
+<p align="center"><img id="lesson6_031" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 6: Switch  to this changeset</p>
+<p>
+	Now, we are going to create the second new branch from Baseline003. 
+</p>
+<p>Let’s go to the ”Branch Explorer” view, right click on the current changeset and select “Create a branch from this changeset” option. Enter “SCM004” as branch name and enter a comment like the below figure:
+</p>
+<p align="center"><img id="lesson6_032" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 7: New branch SCM004</p>
+
+<p>We’re going to modify the same file, “dokan-net-0.6.0\DokanNet\Properties\DokanNet.cs” adding new lines at line 117:
+</p>
+<p align="center"><img id="lesson6_033" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 8: Modifying a file</p>
+
+<p>
+	Let’s go to “Pending changes” view and check what we have modified so far:
+</p>
+<p align="center"><img id="lesson6_034" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 9: Pending Changes View</p>
+
+<p>
+	Don’t forget to write a comment, for example: “Adding new lines on DokanNet.cs file” and make checkin.
+</p>
+<p>
+	Let’s go to “Branch Explorer” view to see the current state of the repository. Something like the following will show up:
+</p>
+<p align="center"><img id="lesson6_035" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 10: Branch Explorer</p>
+
+<p>
+	Let’s go to return main branch. Right click on Baseline003 and click “Switch workspace to this changeset” action as we did before to switch from SCM003 branch to main branch. So, the current state of the repository will be something like the following will show up:
+</p>
+<p align="center"><img id="lesson6_036" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 11: Main Branch</p>
+
+<p>
+	We’ve modified exactly the same code in one of our changes on the file, which makes the merge much more complicated.
+</p>
+<p>First we’re going to make the merge from SCM003 branch to main branch and later from SCM004 branch to main branch.</p>
+<p>Let’s go to “Branch Explorer” view. Right click on the SCM003 branch and click on “Merge from this branch” option. After clicking, something similar to following figure will show up:</p>
+
+<p align="center"><img id="lesson6_037" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 12: Process all merges</p>
+
+<p>
+	As you can see, there are changes only in source contributor. So we can click “Process all merges” button and make the merge.
+</p>
+<p>Let’s go to “Branch Explorer” view to check the current state of the repository:</p>
+
+<p align="center"><img id="lesson6_038" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 13: Pending Merge Link</p>
+
+<p>There is a new pending merge link. Let’s go to “Pending Changes” view. You can see the same but in other way, as the figure below shows:</p>
+
+<p align="center"><img id="lesson6_039" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 14: Pending changes</p>
+
+<p>It means that the changed file is from a pending merge. Don’t forget to write a comment before make checking, for example: </p>
+
+<p align="center"><img id="lesson6_040" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 15: Pending merge links</p>
+
+<p>Let’s go to “Branch Explorer” view to see the current state of the repository:</p>
+
+<p align="center"><img id="lesson6_041" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 16: Branch Explorer</p>
+
+<p>
+	As you can see, SCM003 branch is merged. Now, we’re going the same steps to merge SCM004 branch.
+</p>
+<p>   
+   Right click on SCM004 branch and select “Merge from this branch” action. After clicking “Merge from this branch” view will show up. Click on “Process all merges” button and the “merge” view will look like the following:
+</p>
+
+<p align="center"><img id="lesson6_042" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 17: Merge</p>
+
+<p>   
+   As you can see, there are two windows. Let’s go to explain the windows in top level:
+</p>
+
+<p align="center"><img id="lesson6_043" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 18: Merge works</p>
+
+<p>
+	On the figure you can learn how merge works. There are 4 important terms:
+</p>
+<ul>
+	<li>Source (src): it shows the revision you are merging from</li>
+	<li>Base: the initial revision</li>
+	<li>Destination (dst): what you have right now on your workspace</li>
+	<li>Result: how the revision on your workspace will be once you finish the merge</li>
+</ul>
+<p>
+Each one of them has different color. It will help you to understand the merge process. Remember source in blue color and destination in green color. Let’s close  “Merge” window. The “Merge Tool” window will look like the following:
+</p>
+<p align="center"><img id="lesson6_044" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 19: Merge tool</p>
+
+<p>
+	On the left side you can see the code I added in SCM003 (the source, in blue color). On the right side, you can see the code I added in SCM004 (the destination, in green color). At the bottom, you will see the final result with both contributors. 
+</p>
+
+<p>
+	Under these circumstances, the tool will always prompt the user. It will still save you precious time because it directly focuses you on the problem, but you’ll have to make the decision yourself.
+</p>
+
+<p>
+	In my case, I agree with Destination, so click on “Deselect Source” and “Deselect Base”, and something like the following will show up:
+</p>
+
+<p align="center"><img id="lesson6_045" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 20: Merge tool: destination, source...</p>
+
+<p>As you can see, the result file has a background in  green color, like Destination code.</p>
+
+<p>
+	If I agree with the result, so click on “Save and Exit” button, at the top of Tool bar. 
+</p>
+
+<p>
+	Let’s go to “Branch Explorer” view to see the current state of the repository. Something like the following will show up:
+</p>
+
+<p align="center"><img id="lesson6_046" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 21: Branch Explorer: pending merge</p>
+
+<p>
+	In the SCM004 branch there are two new things:
+</p>
+<ul>
+	<li>Checkout changeset: the “house” in dashed circle</li>
+	<li>Pending merge link: the dashed line with an ended arrow </li>
+</ul>
+
+
+<p>
+	Let’s go to “Pending changes” and check what we have modified so far. Remember to write a comment before to make checking. 
+</p>
+
+<p align="center"><img id="lesson6_047" 
+	src="../bootstrap/img/lesson6/manual_conflict.png"  width="40%"></p>
+
+<p align="center">Figure 22: Pending changes</p>
+
+<p>
+   Now you can compare the two merges we have made:
+</p>
+<ul>
+	<li>If only on contributor changed the code, it’s an automatic conflict</li>
+	<li>If both contributor changed the code, it’s not trivial and merge tool will ask you</li>
+</ul>
+
