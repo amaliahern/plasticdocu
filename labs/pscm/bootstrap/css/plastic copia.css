@@ -1,0 +1,78 @@
+html{
+  height:100%;
+}
+body{
+  background-color:#FBFBEF;
+  background-image: -moz-linear-gradient(top, #FBFBEF, #FEFEEC);
+  background-image: -webkit-gradient(linear, left top,left bottom, from(#FBFBEF), to(#FEFEEC));
+  background-image: linear-gradient(top, #FBFBEF, #FEFEEC);
+}
+.text-orange {
+  color: #ff8000;
+}
+
+.text-blue {
+  color: #0000A3;
+}
+
+.col-9 {
+	padding-top: 100px;
+}
+
+.nav-bar{
+	padding-top: 40px;
+}
+
+
+a:link, a:visited {
+  color: #4747FF;
+  text-decoration: none;
+}
+a:focus, a:hover, a:active {
+  color: #4747FF;
+  text-decoration: none;
+}
+
+
+.hero-unit {
+	background-image: url(webtreats-grungy-teal1.jpg);
+}
+
+.hero-unit h1 {
+	color: #fff8eb;
+}
+img {
+	max-width: 80%;
+}
+
+.figure {
+    border: 0.2em;
+}
+
+.figure img {
+    margin: 0 auto;
+    display: block;
+}
+.figure p {
+    font-size: 0.8em;
+    text-align: center;
+    color: #193540;
+}
+
+.part {
+	overflow:hidden;
+}
+.column1 {
+	padding-top:2em;  
+	overflow:hidden;
+	float:left;
+	width: 35%;
+}
+
+.column2 {
+	padding-top:2em;
+	padding-bottom:2em;  
+	overflow:hidden;
+	float:right;
+	width: 65%;
+}

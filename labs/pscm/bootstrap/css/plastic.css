@@ -1,0 +1,76 @@
+html{
+  height:100%;
+}
+body{
+  background-color:#E4E1D7;
+  background-image: -moz-linear-gradient(top,#FFFFFF,  #E4E1D7);
+  background-image: -webkit-gradient(linear, left top,left bottom, from(#FFFFFF), to(#E4E1D7));
+  background-image: linear-gradient(top, #FFFFFF, #E4E1D7);
+}
+.text-orange {
+  color: #f27405;
+}
+
+.text-blue {
+  color: #0000A3;
+}
+
+.text-grey {
+  color: #999999;
+}
+
+.col-9 {
+	padding-top: 3.5em;
+}
+
+.nav-bar{
+	padding-top: 40px;
+}
+
+
+a:link{
+  color: #2ba5f5;
+  text-decoration: none;
+}
+a:focus, a:hover, a:active {
+  color: #f28c0f;
+  text-decoration: none;
+}
+
+a.selected{
+	color: #d95407;
+}
+
+.hero-unit {
+	background-image: url(wild_oliva.png);
+}
+
+.hero-unit h1 {
+	color: #f27405;
+}
+img {
+	max-width: 80%;
+}
+
+.figure {
+    border: 0.2em;
+}
+
+.figure img {
+    margin: 0 auto;
+    display: block;
+}
+.figure p {
+    font-size: 0.8em;
+    text-align: center;
+    color: #193540;
+}
+
+
+.start {
+	padding-top:2em;  	
+  }
+
+.nav-start {
+	padding-top:6em;  	
+  }
