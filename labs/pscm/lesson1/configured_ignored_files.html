@@ -1,24 +1,34 @@
+<div id="mainContainer" class="span9">
+        <form class="navbar-form pull-right">
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson1/create_workspace.html')">Previous</a></button>
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson1/add_code.html')">Next</a></button>
+        </form>
+
+<div class="col-9">
+
 <h2>Configure the ignored files list</h2>
 <p>
 	Take a look at the “items view” in your recently created workspace. Click on the “items view” on the “main actions” action bar:
  </p>
 </p>
-<p align="center"><img id="lesson1_012" 
-	src="../bootstrap/img/lesson1/itemsviewbutton.png" width="20%"></p>
+<p align="center"><img class="img-polaroid" id="lesson1_012" 
+	src="./bootstrap/img/lesson1/itemsviewbutton.png"></p>
 
 <p align="center">Figure 1: Items View</p>
 
 <p>And the “items view” will show up. Take a look at it and you’ll see how, right now, all files and directories are marked as “private” which means they’re not yet under Plastic SCM control.
 </p>
 <p>Also take a look at the “.svn” folders. These are folders containing information coming from Subversion, the version control originally used by Dokan. We’re not interested on these folders so we’re going to add them to the “ignored list”.</p>
-<p align="center"><img id="lesson1_013" 
-	src="../bootstrap/img/lesson1/itemsviewallprivate.png" width="70%"></p>
+<p align="center"><img class="img-polaroid" id="lesson1_013" 
+	src="./bootstrap/img/lesson1/itemsviewallprivate.png"></p>
 
 <p align="center">Figure 2: Ignored list</p>
 
 <p>In order to do that, right click on a “.svn” folder and click on “add to ignored list” as the figure below shows:</p>
-<p align="center"><img id="lesson1_014" 
-	src="../bootstrap/img/lesson1/addtoignoredlist.png" width="60%"></p>
+<p align="center"><img class="img-polaroid" id="lesson1_014" 
+	src="./bootstrap/img/lesson1/addtoignoredlist.png"></p>
 
 <p align="center">Figure 3: Add .svn ignored list</p>
 
@@ -29,8 +39,10 @@
 <p>
 	Repeat for the “.bin” and “.obj” subdirectories and “.suo” files and you’ll get something like this:
 </p>
-<p align="center"><img id="lesson1_015" 
-	src="../bootstrap/img/lesson1/itemsviewaddedtoignoredconf.png" width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson1_015" 
+	src="./bootstrap/img/lesson1/itemsviewaddedtoignoredconf.png"></p>
 
 <p align="center">Figure 4: All ignored files</p>
 <p>Now we’re ready to add the code into the version control, because we ensured that we’ll only add the code we’re interested on.</p>
+</div>
+</div>

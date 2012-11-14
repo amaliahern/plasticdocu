@@ -23,10 +23,10 @@
  <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">Plastic SCM</a>
+      <a class="brand" href="http://192.168.2.37/~amalia/Sites/pscm/pscmdoc.html">Plastic SCM</a>
       <ul class="nav">
-        <li class="active"><a href="#">features</a></li>
-        <li><a href="#download">download</a></li>
+        <li class="active"><a href="#">lessons</a></li>
+        <li><a href="http://192.168.2.37/~amalia/Sites/pscm/download/download.html">download</a></li>
         <li><a href="#about">about</a></li>
       </ul>
     </div>
@@ -34,25 +34,133 @@
 </div>
  <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span2">
+    <div class="span3">
       <ul class="nav nav-list">
-  		<li class="nav-header">Table of Contents</li>
-  		<li><a href="javascript:loadDocumentation('/lesson1/download_some_code.html')">Download some code</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/put_the_code_in_a_directory.html')">Put the code in a directory</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/create_repository.html')">Create a repository</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/create_workspace.html')">Create a workspace</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/configured_ignored_files.html')">Configured the ignored files list</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/add_code.html')">Add your code to version control</a></li>
-      <li><a href="javascript:loadDocumentation('/lesson1/first_label.html')">Your first label</a></li>
-      
+        <div class="accordion" id="contents">
+         
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapseOne">
+                      <h4 class="text-info"> Lesson 1 - Adding the initial code  </h3>
+                  </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson1/download_some_code.html')">Download some code</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/put_the_code_in_a_directory.html')">Put the code in a directory</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/create_repository.html')">Create a repository</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/create_workspace.html')">Create a workspace</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/configured_ignored_files.html')">Configured the ignored files list</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/add_code.html')">Add your code to version control</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson1/first_label.html')">Your first label</a></li>
+                </div>
+              </div>
+          </div>
+
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapseTwo">
+                      <h4 class="text-info">Lesson 2 - Modifying the code</h4>
+                  </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson2/select_file_modify.html')">Select a file to modify</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson2/checkout_edit.html')">Checkout to edit</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson2/file_modify.html')">Modify the file</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson2/check_pending_changes.html')">Check the difference in pending changes</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson2/making_checking.html')">Making Checking</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson2/show_diff.html')">Show the Diff</a></li>
+                </div>
+              </div>
+          </div>
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapse3">
+                        <h4 class="text-info">Lesson 3 - Moving, deleting & renaming</h4>
+                  </a>
+              </div>
+              <div id="collapse3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson3/moving_file.html')">Moving a file </a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson3/deleting_file.html')">Deleting a file</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson3/renaming_file.html')">Renaming a file</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson3/undoing_changes.html')">Undoing changes</a></li>
+                </div>
+              </div>
+          </div>
+
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapse4">
+                      <h4 class="text-info">Lesson 4 - Transparent SCM</h4>
+                  </a>
+              </div>
+              <div id="collapse4" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson4/intro.html')">Intro to Transparent SCM</a></li>
+                   <li><a href="javascript:loadDocumentation('/lesson4/finding_changes.html')">Finding changes</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson4/detect_move_file.html')">Move a file and let Plastic SCM detect it for you</a></li>
+                  <li><a href="javascript:loadDocumentation('/lesson4/move_modify_file.html')">Move a modified file</a></li>
+                  <li><a href="javascript:loadDocumentation('/lesson4/delete_file.html')">Delete a file file</a></li>
+                  <li><a href="javascript:loadDocumentation('/lesson4/detecting_directory.html')">Detecting moved directories</a></li>
+                  <li><a href="javascript:loadDocumentation('/lesson4/checking.html')">Check in</a></li>
+                  <li><a href="javascript:loadDocumentation('/lesson4/checking_differences.html')">Check the differences</a></li>
+                </div>
+              </div>
+          </div>
+         
+           <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapse5">
+                        <h4 class="text-info">Lesson 5 - Working on branches</h4>
+                  </a>
+              </div>
+              <div id="collapse5" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson5/create_branches.html')">Why should I create branches?  </a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson5/creating_baseline.html')">Creating a “baseline”</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson5/first_branch.html')">Your first branch</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson5/changes_branches.html')">Making some changes in the branches</a></li>
+                </div>
+              </div>
+          </div>
+
+          <div class="accordion-group">
+              <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#contents" href="#collapse6">
+                      <h4 class="text-info">Lesson 6 - Merging the changes</h4>
+                  </a>
+              </div>
+              <div id="collapse6" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <li><a href="javascript:loadDocumentation('/lesson6/merge.html')">Merge</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/creating_otherbranch.html')">Creating another branch</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/first_merge.html')">First merge</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/merge_main.html')">Merge back to "main"</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/test_baseline.html')">Test in baseline</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/manual_conflict.html')">3-way merge: Manual conflicts</a></li>
+                    <li><a href="javascript:loadDocumentation('/lesson6/2way_merge.html')">3-way merge vs 2-way merge</a></li>
+                </div>
+              </div>
+          </div>
+        </div>
 	  </ul>
     </div>
-    <div id="mainContainer" class="span10">
-      <h2>Plastic SCM Labs</h2>
-        <p>Welcome to Plastic SCM labs... </p>
-        <p>Each lab explains ....</p>
-        <p> This lessons uses a tutorial format that incrementally works on a project that teaches you some fundamental concepts about distributed version control system. So it's important you follow each step.
-        <p>This is the first lesson....</p>
+    <div id="mainContainer" class="span9">
+      <div class="nav navbar-inverse">
+        <form class="navbar-form pull-right">
+          <button type="button" class="btn">Next</button>
+          <button type="button" class="btn">Previous</button>
+        </form>
+      </div>
+      <div class="">
+        <h2>Plastic SCM Labs</h2>
+          <p>Welcome to Plastic SCM labs. Here you will find a collection of labs to help you understand Plastic SCM, using GUI tool. </p>
+          <p>Each lab explains the steps required to solve a specific problem.</p>
+          <p> This lessons uses a tutorial format that incrementally works on a project that teaches you some fundamental concepts about distributed version control system. So it's important you follow each step.
+          <p>This is the first lesson....</p>
+        </div>
     </div>
   </div>
 </div>
@@ -60,7 +168,7 @@
 
         function loadDocumentation(sectionpage) {
 
-        $('#mainContainer').load('http://192.168.1.51/~amalia/Sites/pscm'+sectionpage);
+        $('#mainContainer').load('http://192.168.1.60/~amalia/Sites/pscm'+sectionpage);
 
         };    
 

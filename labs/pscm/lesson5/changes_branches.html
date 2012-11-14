@@ -1,10 +1,23 @@
+<div id="mainContainer" class="span9">
+      
+        <form class="navbar-form pull-right">
+      
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson5/first_branch.html')">Previous</a></button>
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson6/lesson6.html')">Next</a></button>
+      
+        </form>
+      
+
+<div class="col-9">
 <h2>Making some changes in the branches</h2>
 <p>
 	Let’s go to the branch explorer and check the current state:
 </p>	
 
-<p align="center"><img id="lesson5_007" 
-	src="../bootstrap/img/lesson5/currentbranch_007.png"  width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_007" 
+	src="./bootstrap/img/lesson5/currentbranch_007.png"></p>
 
 <p align="center">Figure 1: Current state</p>
 
@@ -12,47 +25,47 @@
    Click on the  “Options” button on Tool bar. On the right side you will see the properties of the branch. The windows will look like this:
 </p>   
 
-<p align="center"><img id="lesson5_008" 
-	src="../bootstrap/img/lesson5/properties_008.png" width="20%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_008" 
+	src="./bootstrap/img/lesson5/properties_008.png"></p>
 
 <p align="center">Figure 2: Properties of the branch</p>
 
 <p>Let’s now make some changes on the branch. Let’s go to “Items View”, we are going to modify ‘dokan-net-0.6.0\readme-dokan.txt’ file to add some lines at the end. Let’s first run a checkout: </p>
 
-<p align="center"><img id="lesson5_009" 
-	src="../bootstrap/img/lesson5/checkou_file_readme.png" width="40%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_009" 
+	src="./bootstrap/img/lesson5/checkou_file_readme.png"></p>
 
 <p align="center">Figure 3: Items View</p>
 
 <p>
 	Right click on the file and select Open to edit the file. We are going to add several lines at the end:
 </p>
-<p align="center"><img id="lesson5_010" 
-	src="../bootstrap/img/lesson5/adding_thanks_file.png" width="50%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_010" 
+	src="./bootstrap/img/lesson5/adding_thanks_file.png"></p>
 
 <p align="center">Figure 4: Adding files</p>
 
 <p>
 	Let’s go to pending changes and check what we have modified so far:
 </p>
-<p align="center"><img id="lesson5_011" 
-	src="../bootstrap/img/lesson5/pendingchanges_010.png" width="70%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_011" 
+	src="./bootstrap/img/lesson5/pendingchanges_010.png" ></p>
 
 <p align="center">Figure 5: Pending Changes </p>
 
 <p>
 	Now, you can introduce a comment for the checking, something like the following will show up:
 </p>
-<p align="center"><img id="lesson5_012" 
-	src="../bootstrap/img/lesson5/checkingpendingchanges_011.png" width="70%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_012" 
+	src="./bootstrap/img/lesson5/checkingpendingchanges_011.png"></p>
 
 <p align="center">Figure 6: Checkin Comments </p>
 
 <p>
 	Let’s go to “Branch Explorer” check the branch so far:
 </p>
-<p align="center"><img id="lesson5_013" 
-	src="../bootstrap/img/lesson5/changesetinthebranch_012.png" width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_013" 
+	src="./bootstrap/img/lesson5/changesetinthebranch_012.png"></p>
 
 <p align="center">Figure 7: Current Branch </p>
 
@@ -60,8 +73,8 @@
 	As you can see, there is a new changeset in the branch SCM001. Why don’t check the difference? So, right click on the current changeset, and you will see the figure below:
 </p>
 
-<p align="center"><img id="lesson5_014" 
-	src="../bootstrap/img/lesson5/diffoptions_013.png" width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_014" 
+	src="./bootstrap/img/lesson5/diffoptions_013.png"></p>
 
 <p align="center">Figure 8: Current Branch </p>
 
@@ -69,8 +82,8 @@
 	Once you run Diff changeset, you can inspect the difference, and you will see something like the following will show up:
 </p>
 
-<p align="center"><img id="lesson5_015" 
-	src="../bootstrap/img/lesson5/diffs_014.png" width="60%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_015" 
+	src="./bootstrap/img/lesson5/diffs_014.png"></p>
 
 <p align="center">Figure 9: Diff Changeset </p>
 
@@ -78,8 +91,8 @@
 	We are going to do a new change in the branch. Let’s go to “Items View”. Modify ‘‘dokan-net-0.6.0\mylicense.txt’ as follows: delete the lines 10 and 11.
 </p>
 
-<p align="center"><img id="lesson5_016" 
-	src="../bootstrap/img/lesson5/modifying_file_mylicense.png" width="50%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_016" 
+	src="./bootstrap/img/lesson5/modifying_file_mylicense.png"></p>
 
 <p align="center">Figure 10: Modifying the file </p>
 
@@ -87,8 +100,8 @@
 	Let’s go to “Branch Explorer” view, something like the following will show up:
 </p>
 
-<p align="center"><img id="lesson5_017" 
-	src="../bootstrap/img/lesson5/branchnochecking_018.png" width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_017" 
+	src="./bootstrap/img/lesson5/branchnochecking_018.png"></p>
 
 <p align="center">Figure 11: Branch Explorer </p>
 
@@ -103,22 +116,22 @@
 
 <p>Go to pending changes what we have modified so far:</p>
 
-<p align="center"><img id="lesson5_018" 
-	src="../bootstrap/img/lesson5/pendingchanges_2ndfile.png" width="50%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_018" 
+	src="./bootstrap/img/lesson5/pendingchanges_2ndfile.png"></p>
 
 <p align="center">Figure 12: Pending Changes </p>
 
 <p>Now you can checkin and write a comment like: “Modifying mylicence.txt file”:</p>
 
-<p align="center"><img id="lesson5_019" 
-	src="../bootstrap/img/lesson5/comment_pendingchanges_2ndfile.png" width="50%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_019" 
+	src="./bootstrap/img/lesson5/comment_pendingchanges_2ndfile.png"></p>
 
 <p align="center">Figure 13: Checkin comments </p>
 
 <p>Let’s go to “Branch Explorer” view to see the current state of the current branch, SCM001. Something like the following will show up:</p>
 
-<p align="center"><img id="lesson5_020" 
-	src="../bootstrap/img/lesson5/twocahngesets_SCM001branch.png" width="30%"></p>
+<p align="center"><img class="img-polaroid" id="lesson5_020" 
+	src="./bootstrap/img/lesson5/twocahngesets_SCM001branch.png"></p>
 
 <p align="center">Figure 14: Branch Explorer </p>
 
@@ -129,5 +142,6 @@
 <p>You can read more about it in this <a href="http://codicesoftware.blogspot.com/2012/09/self-documented-development-through.html">post </a> </p>
 
 <p>It’s great. The lesson 5 is finished.</p>
+</div>
 
-
+</div>

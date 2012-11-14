@@ -1,25 +1,38 @@
+<div id="mainContainer" class="span9">
+     
+        <form class="navbar-form pull-right">
+        
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson4/intro.html')">Previous</a></button>
+          <button type="button" class="btn">
+          	<a href="javascript:loadDocumentation('/lesson4/detect_move_file.html')">Next</a></button>
+        
+        </form>
+      
+
+<div class="col-9">
 <h2>Finding changes</h2>
 <p>
 	Modify ‘dokan-net-0.6.0\DokanNet\DokanNet.cs’ as follows: delete the line 149
 </p>
 
 <p align="center"><img id="lesson4_001" 
-	src="../bootstrap/img/lesson4/dokannet_001.png"  width="50%"></p>
+	src="./bootstrap/img/lesson4/dokannet_001.png"  width="50%"></p>
 
 <p align="center">Figure 1: Modifying a file</p>
 
 <p>
 Now go and edit ‘dokan-net-0.6.0\DokanNet\DokanOperation.cs’ by uncommenting the range from line 43 to line 49 as follows:
 
-<p align="center"><img id="lesson4_002" 
-	src="../bootstrap/img/lesson4/dokannetoperations_002.png" width="40%"></p>
+<p align="center"><img  class="img-polaroid" id="lesson4_002" 
+	src="./bootstrap/img/lesson4/dokannetoperations_002.png"></p>
 
 <p align="center">Figure 2: Modifying other file</p>
 
 <p>Go to pending changes to check what we have modified so far:</p>
 
-<p align="center"><img id="lesson4_003" 
-	src="../bootstrap/img/lesson4/pendingchanges_files_003.png"  width="70%"></p>
+<p align="center"><img class="img-polaroid" id="lesson4_003" 
+	src="./bootstrap/img/lesson4/pendingchanges_files_003.png"></p>
 
 <p align="center">Figure 3: Pending Changes View</p>
 
@@ -27,4 +40,5 @@ Now go and edit ‘dokan-net-0.6.0\DokanNet\DokanOperation.cs’ by uncommenting
 	As you can see, the pending changes view is detecting the files you’ve modified. You didn’t have to ‘checkout’ them prior to edit, and as you see, in the ‘status’ column, instead of ‘checkedout’ you can read ‘changed’. 
 </p>
 
-
+</div>
+</div>
